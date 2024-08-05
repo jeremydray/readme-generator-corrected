@@ -9,43 +9,43 @@ const questions =
     [
         {
             type: 'input',
-            message: 'What is the title of the project?',
+            message: 'What is the title of the project? ',
             name: 'title',
         },
         {
             type: 'input',
-            message: 'Enter instructions on how to install the application',
+            message: 'Enter instructions on how to install the application: ',
             name: 'instructions',
         },
         {
             type: 'input',
-            message: 'Enter a description of how to use the application',
+            message: 'Enter a description of how to use the application: ',
             name: 'description',
         },
         {
             type: 'input',
-            message: 'Enter guidelines of how to contribute to the application',
+            message: 'Enter guidelines of how to contribute to the application: ',
             name: 'contribution',
         },
         {
             type: 'input',
-            message: 'Enter instructions of how to test the application',
+            message: 'Enter instructions of how to test the application: ',
             name: 'testing',
         },
         {
             type: 'list',
-            message: 'Choose what license will be used',
+            message: 'Choose what license will be used:',
             choices: ['MIT', 'Apache License 2.0', 'GNU General Public License v3', 'BSD 3-Clause License', 'Mozilla Public License 2.0'],
             name: 'license',
         },
         {
             type: 'input',
-            message: 'Enter you GitHub username ',
+            message: 'Enter you GitHub username: ',
             name: 'githubName',
         },
         {
             type: 'input',
-            message: 'Enter your email address for follow up questions.',
+            message: 'Enter your email address for follow up questions: ',
             name: 'email',
         }
     ]

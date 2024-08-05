@@ -35,7 +35,7 @@ const questions =
         {
             type: 'list',
             message: 'Choose what license will be used:',
-            choices: ['MIT', 'Apache License 2.0', 'GNU General Public License v3', 'BSD 3-Clause License', 'Mozilla Public License 2.0'],
+            choices: ['MIT', 'Apache License 2.0', 'GNU General Public License v3', 'BSD 3-Clause License', 'Mozilla Public License 2.0', 'None'],
             name: 'license',
         },
         {
@@ -59,7 +59,7 @@ function init() {
         .then(inputs => {
 
             const readmeContent = generateReadme(inputs);
-            fs.writeFile('README.md', readmeContent, (err) => {
+            fs.writeFile('README-Template.md', readmeContent, (err) => {
                 err ? console.error(err) : console.log('README created!')
             })
         });

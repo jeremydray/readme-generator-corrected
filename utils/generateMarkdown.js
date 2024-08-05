@@ -31,14 +31,14 @@ const licenseArray = [
 // If there is no license, return an empty string
 function renderLicenseBadge(licenseSelection) {
   const { license } = licenseSelection
-  if (licenseSelection === "") {
+  if (license === "None") {
     return ""
   } else {
     const licenseObj = licenseArray.filter(licenseEl => {
       return licenseEl.name === license
     })
     const [selectedLicense] = licenseObj
-    return selectedLicense.badge
+    return `![License badge]${selectedLicense.badge}`
   }
 }
 
@@ -46,7 +46,7 @@ function renderLicenseBadge(licenseSelection) {
 // If there is no license, return an empty string
 function renderLicenseLink(licenseSelection) {
   const { license } = licenseSelection
-  if (licenseSelection === "") {
+  if (license === "None") {
     return ""
   } else {
     const licenseObj = licenseArray.filter(licenseEl => {
@@ -61,7 +61,7 @@ function renderLicenseLink(licenseSelection) {
 // If there is no license, return an empty string
 function renderLicenseSection(licenseSelection) {
   const { license } = licenseSelection
-  if (licenseSelection === "") {
+  if (license === "None") {
     return ""
   } else {
     const licenseObj = licenseArray.filter(licenseEl => {
@@ -79,7 +79,7 @@ function generateReadme(data) {
   const licenseLink = renderLicenseLink(data);
   return `
   # ${data.title}
-  ![License Badge](${badgeLink})
+  ${badgeLink}
   </br>
   ## Table of Contents
   1. [Instructions](#1-instructions)

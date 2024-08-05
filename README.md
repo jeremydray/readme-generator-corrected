@@ -13,7 +13,7 @@
   The application requires VS Code and at least Node 18.20.4, Node Package Manager 10.7.0, and the Inquirer package 8.2.4.
 
   Below is a link to a walkthrough video of the application:</br>
-  https://drive.google.com/file/d/1pRRu1eJVFccDLXHExWLLOPCcqfcSB3j7/view
+  https://drive.google.com/file/d/1McLBuhYe6tTCa3O9drkcUFRVnCW3Yxk-/view?usp=drive_link
 
   ## 2. Description
   Once Node and NPM are installed, you will need to open the "index.js" file in the Integrated Terminal. To do this, right click on the filed and select "Open in Integrated Terminal".</br>

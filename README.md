@@ -16,7 +16,16 @@
   https://drive.google.com/file/d/1pRRu1eJVFccDLXHExWLLOPCcqfcSB3j7/view
 
   ## 2. Description
-  Once Node and NPM are installed, you will need to open the "index.js" file in the Integrated Terminal. To do this, right click on the filed and select "Open in Integrated Terminal". Once the VS Code terminal is open, you will just need to enter 'node index.js' and press enter. Once all of the prompts have been filled, this should auto-populate the README.md file with all of the entered prompt inputs.
+  Once Node and NPM are installed, you will need to open the "index.js" file in the Integrated Terminal. To do this, right click on the filed and select "Open in Integrated Terminal".</br>
+  ![Opening the Terminal](/files/images/open-terminal.png)
+  </br>
+  Once the VS Code terminal is open, you will just need to enter 'node index.js' and press enter. Doing so will let the application begin prompting the user for inputs.
+ 
+  ![Initialization Sample](/files/images/initialization.png)
+  
+  ![Prompt Sample](/files/images/prompts.png)
+
+  Once all of the prompts have been filled, this should auto-populate the README.md file with all of the entered prompt inputs.
 
   ## 3. Contribution Guidelines
   This is an open source project, so any contributions may be made to improve the project

@@ -38,7 +38,7 @@ function renderLicenseBadge(licenseSelection) {
       return licenseEl.name === license
     })
     const [selectedLicense] = licenseObj
-    return `![License badge]${selectedLicense.badge}`
+    return selectedLicense.badge
   }
 }
 
@@ -79,8 +79,7 @@ function generateReadme(data) {
   const licenseLink = renderLicenseLink(data);
   return `
   # ${data.title}
-  ${badgeLink}
-  </br>
+  ![License Badge](${badgeLink})
   ## Table of Contents
   1. [Instructions](#1-instructions)
   2. [Description](#2-description)
